@@ -1,3 +1,6 @@
-<p><%=@question%></p>
-<p><%=@answer%></p>
-<%= link_to "ask a new question", ask_path %>
+<div class="container">
+  <p><%=@question%></p>
+  <p><%=@answer%></p>
+  <%= link_to "ask a new question", ask_path, class: 'btn_new_question' %>
+
+</div>
