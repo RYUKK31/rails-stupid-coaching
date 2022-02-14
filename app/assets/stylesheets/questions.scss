@@ -1,7 +1,22 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-.btn_new_question {
+
+
+
+.container, .container>form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+body {
+  height: 100%;
+  background-color: beige;
+}
+.btn_new_question.btn_new_question {
   border-radius: 3px;
   background-color: #A26FF9;
   font-weight: bold;
@@ -13,12 +28,21 @@
   height: auto;
   border: 1px solid transparent;
   vertical-align: middle;
+  &:hover{
+  background-color: purple;
+  }
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 100px;
+.input_1{
+ padding: 10px 10px;
 }
+.input_2{
+  padding: 10px 10px;
+  border-radius: 3px;
+  background-color: #A26FF9;
+  font-weight: bold;
+  margin-top: 40px;
+  &:hover{
+  background-color: purple;
+  }
+ }
